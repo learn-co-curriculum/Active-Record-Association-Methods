@@ -66,12 +66,12 @@ rake console
 
 ```ruby
 hello = Song.create(name: "Hello")
-=> #<Song:0x007fc75a8de3d8 id: nil, name: "Hello", artist_id: nil, genre_id: nil>
+=> #<Song:0x007fc75a8de3d8 id: 1, name: "Hello", artist_id: nil, genre_id: nil>
 ```
 
 ```ruby
 adele = Artist.create(name: "Adele")
-=> #<Artist:0x007fc75b8d9490 id: nil, name: "Adele">
+=> #<Artist:0x007fc75b8d9490 id: 1, name: "Adele">
 ```
 
 So, we know that an individual song has an `artist_id` attribute. We *could* associate `hello` to `adele` by setting `hello.artist_id=` equal to the `id` of the `adele` object. BUT! Active Record makes it so easy for us. The macros we implemented in our classes allow us to associate a song object directly to an artist object:
@@ -147,3 +147,5 @@ We'll do a handful of methods like this one for the `Song`, `Artist`, and `Genre
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/Active-Record-Association-Methods' title='Active Record Association Methods'>Active Record Association Methods</a> on Learn.co and start learning to code for free.</p>
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/Active-Record-Association-Methods'>ActiveRecord Associations Lab</a> on Learn.co and start learning to code for free.</p>
