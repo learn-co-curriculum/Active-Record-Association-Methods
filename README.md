@@ -78,14 +78,14 @@ So, we know that an individual song has an `artist_id` attribute. We *could* ass
 
 ```ruby
 hello.artist = adele
-=> #<Artist:0x007fc75b8d9490 id: nil, name: "Adele">
+=> #<Artist:0x007fc75b8d9490 id: 1, name: "Adele">
 ```
 
 Now, we can ask `hello` who its artist is:
 
 ```ruby
 hello.artist
-=> #<Artist:0x007fc75b8d9490 id: nil, name: "Adele">
+=> #<Artist:0x007fc75b8d9490 id: 1, name: "Adele">
 ```
 
 We can even chain methods to ask `hello` for the *name* of its artist:
@@ -147,3 +147,5 @@ We'll do a handful of methods like this one for the `Song`, `Artist`, and `Genre
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/Active-Record-Association-Methods' title='Active Record Association Methods'>Active Record Association Methods</a> on Learn.co and start learning to code for free.</p>
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/Active-Record-Association-Methods'>ActiveRecord Associations Lab</a> on Learn.co and start learning to code for free.</p>
